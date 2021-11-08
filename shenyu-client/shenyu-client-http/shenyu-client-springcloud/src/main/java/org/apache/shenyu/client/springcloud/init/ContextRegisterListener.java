@@ -80,6 +80,7 @@ public class ContextRegisterListener implements ApplicationListener<ContextRefre
         }
         int port = Integer.parseInt(props.getProperty(ShenyuClientConstants.PORT));
         this.appName = env.getProperty("spring.application.name");
+        this.env = env;
         this.host = props.getProperty(ShenyuClientConstants.HOST);
         this.port = port;
     }
